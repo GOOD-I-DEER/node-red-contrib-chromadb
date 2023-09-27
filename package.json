@@ -12,7 +12,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GOOD-I-DEER/node-red-contrib-chromadb.git"
+    "url": "git+https://github.com/GOOD-I-DEER/node-red-contrib-chromadb.git"
   },
   "author": "GOOD-I-DEER",
   "node-red": {
