@@ -1,0 +1,35 @@
+{
+  "name": "@good-i-deer/node-red-contrib-chromadb",
+  "version": "1.0.0",
+  "description": "ChromaDB Node for Node-RED",
+  "keywords": [
+    "node-red",
+    "vector",
+    "database",
+    "chromadb",
+    "embedding"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GOOD-I-DEER/node-red-contrib-chromadb.git"
+  },
+  "author": "GOOD-I-DEER",
+  "node-red": {
+    "nodes": {
+      "chroma-db": "chroma-db.js"
+    }
+  },
+  "dependencies": {
+    "chromadb": "^1.5.9"
+  },
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/issues"
+  },
+  "homepage": "https://github.com/GOOD-I-DEER/node-red-contrib-chromadb#readme",
+  "main": "chroma-db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
