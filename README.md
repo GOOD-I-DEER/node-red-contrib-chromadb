@@ -1,7 +1,7 @@
 # @good-i-deer/node-red-contrib-chromadb
 
 [![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
-[![npm version](https://badge.fury.io/js/@GOOD-I-DEER%2Fnode-red-contrib-chromadb.svg)](https://badge.fury.io/js/@GOOD-I-DEER%2Fnode-red-contrib-chromadb)
+[![npm version](https://badge.fury.io/js/@good-i-deer%2Fnode-red-contrib-chromadb.svg)](https://badge.fury.io/js/@good-i-deer%2Fnode-red-contrib-chromadb)
 [![GitHub license](https://img.shields.io/github/license/GOOD-I-DEER/node-red-contrib-chromadb)](https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/blob/main/LICENSE)
 
 This module provides a node that connects and operates with ChromaDB in Node-RED.
@@ -14,7 +14,7 @@ These nodes require node.js version 18.16.1 and Node-RED version 3.1.0.
 
 This node is part of the Facial Recognition with AI package.  
 If you would like to see the entire package, please go to the link.
-[@good-i-deer/node-red-contrib-vision-AI](https://badge.fury.io/js/@GOOD-I-DEER/node-red-contrib-vision-AI)
+[@good-i-deer/node-red-contrib-vision-ai](https://www.npmjs.com/package/@good-i-deer/node-red-contrib-vision-ai)
 
 ChromaDB is the open-source embedding database. ChromaDB makes it easy to store and query embedded values. This node makes it possible to run ChromaDB operations(create/delete collection, insert/query/delete embedding) in Node-RED.
 
@@ -22,7 +22,7 @@ ChromaDB is the open-source embedding database. ChromaDB makes it easy to store 
 
 ## Pre-requisites
 
-The Node-Red-Contrib-ChromaDB requires [Node-RED](https://nodered.org) to be installed and requires a running [Chroma-DB]() server.
+The Node-Red-Contrib-ChromaDB requires [Node-RED](https://nodered.org) to be installed and requires a running [Chroma-DB](https://github.com/chroma-core/chroma) server.
 
 If necessary, you can install and run the chromaDB server on local. Please refer to [Getting Started](https://docs.trychroma.com/getting-started).
 
