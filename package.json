@@ -1,6 +1,6 @@
 {
   "name": "@good-i-deer/node-red-contrib-chromadb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ChromaDB Node for Node-RED",
   "keywords": [
     "node-red",
