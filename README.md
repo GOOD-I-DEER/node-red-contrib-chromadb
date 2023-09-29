@@ -35,7 +35,7 @@ cd ~/.node-red
 npm install @good-i-deer/node-red-contrib-chromadb
 ```
 
-Restart your Node-RED instance
+Restart your Node-RED instance.
 
 <hr>
 
@@ -76,13 +76,13 @@ Port
 
 Operation
 
-- The operation that want to run on ChromaDB
+- The operation that want to run on ChromaDB.
 
 - Operation Types
 
-  - list: list all collections in ChromaDB server
+  - list: list all collections in ChromaDB server.
 
-  - create: create collection. Does not create if the collection with same name already exists
+  - create: create collection. Does not create if the collection with same name already exists.
 
   - insert: insert embedding value(s) into the collection.
 
@@ -94,7 +94,7 @@ Operation
 
 DB Name
 
-- The name of DB(collection) that you want to create, delete, or apply the operation
+- The name of DB(collection) that you want to create, delete, or apply the operation.
 
 Dist Method
 
