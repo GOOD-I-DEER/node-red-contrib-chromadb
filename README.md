@@ -163,26 +163,7 @@ The following are example flows using Good ChromaDB.
         "y": 320,
         "wires": [
             [
-                "a1d2c13b66902955"
-            ]
-        ]
-    },
-    {
-        "id": "a1d2c13b66902955",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "Create Collection",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MyCollection",
-        "distance": "cosine",
-        "operation": "create",
-        "nResults": "1",
-        "x": 530,
-        "y": 320,
-        "wires": [
-            [
-                "c6332d85335a6f9f"
+                "a8efe2228a20081d"
             ]
         ]
     },
@@ -201,252 +182,6 @@ The following are example flows using Good ChromaDB.
         "statusType": "auto",
         "x": 750,
         "y": 320,
-        "wires": []
-    },
-    {
-        "id": "d831e3ae54f820d8",
-        "type": "inject",
-        "z": "1e6ef671efdf6e7b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[[1.2, 2.4, 4.5], [2.2, 4.4, 4.5]]",
-        "payloadType": "jsonata",
-        "x": 1110,
-        "y": 420,
-        "wires": [
-            [
-                "ad9903267e9a109b"
-            ]
-        ]
-    },
-    {
-        "id": "ad9903267e9a109b",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MYDB",
-        "distance": "cosine",
-        "operation": "insert",
-        "nResults": "1",
-        "x": 1330,
-        "y": 420,
-        "wires": [
-            [
-                "db21bb7308955554",
-                "2d3e04c4cc2c2b16"
-            ]
-        ]
-    },
-    {
-        "id": "db21bb7308955554",
-        "type": "debug",
-        "z": "1e6ef671efdf6e7b",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "2d3e04c4cc2c2b16",
-        "type": "debug",
-        "z": "1e6ef671efdf6e7b",
-        "name": "debug 19",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "result",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "1f6586aa27c10340",
-        "type": "inject",
-        "z": "1e6ef671efdf6e7b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[[1.2, 2.4, 4.5], [2.2, 4.4, 4.5]]",
-        "payloadType": "jsonata",
-        "x": 1110,
-        "y": 560,
-        "wires": [
-            [
-                "f23b2a02822fdbe3"
-            ]
-        ]
-    },
-    {
-        "id": "f23b2a02822fdbe3",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MYDB",
-        "distance": "cosine",
-        "operation": "query",
-        "nResults": "1",
-        "x": 1330,
-        "y": 560,
-        "wires": [
-            [
-                "ab8fe1561ab6a3d1",
-                "92a820088001b3d5"
-            ]
-        ]
-    },
-    {
-        "id": "ab8fe1561ab6a3d1",
-        "type": "debug",
-        "z": "1e6ef671efdf6e7b",
-        "name": "debug 20",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "92a820088001b3d5",
-        "type": "debug",
-        "z": "1e6ef671efdf6e7b",
-        "name": "debug 21",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "result",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "f778fec7898a9492",
-        "type": "inject",
-        "z": "1e6ef671efdf6e7b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[\"id-1\", \"id-3\"]",
-        "payloadType": "jsonata",
-        "x": 1110,
-        "y": 700,
-        "wires": [
-            [
-                "1108f63a24c5d88d"
-            ]
-        ]
-    },
-    {
-        "id": "1108f63a24c5d88d",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MYDB",
-        "distance": "cosine",
-        "operation": "delete",
-        "nResults": "1",
-        "x": 1330,
-        "y": 700,
-        "wires": [
-            [
-                "6586731ca4687b22",
-                "81313c3fb44866e5"
-            ]
-        ]
-    },
-    {
-        "id": "6586731ca4687b22",
-        "type": "debug",
-        "z": "1e6ef671efdf6e7b",
-        "name": "debug 22",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "81313c3fb44866e5",
-        "type": "debug",
-        "z": "1e6ef671efdf6e7b",
-        "name": "debug 23",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "result",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 660,
         "wires": []
     },
     {
@@ -484,26 +219,7 @@ The following are example flows using Good ChromaDB.
         "y": 380,
         "wires": [
             [
-                "570b7979c422cf5d"
-            ]
-        ]
-    },
-    {
-        "id": "570b7979c422cf5d",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "Insert Embeddings",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MyCollection",
-        "distance": "cosine",
-        "operation": "insert",
-        "nResults": "1",
-        "x": 530,
-        "y": 380,
-        "wires": [
-            [
-                "e778da936ae795f4"
+                "c203de7681166255"
             ]
         ]
     },
@@ -549,26 +265,7 @@ The following are example flows using Good ChromaDB.
         "y": 440,
         "wires": [
             [
-                "ad2edd8fdd7f5a59"
-            ]
-        ]
-    },
-    {
-        "id": "ad2edd8fdd7f5a59",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "Query Embeddings",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MyCollection",
-        "distance": "cosine",
-        "operation": "query",
-        "nResults": "5",
-        "x": 530,
-        "y": 440,
-        "wires": [
-            [
-                "32ea1864d84fdb4e"
+                "5f7cd9e19723b46e"
             ]
         ]
     },
@@ -614,26 +311,7 @@ The following are example flows using Good ChromaDB.
         "y": 500,
         "wires": [
             [
-                "ce5b74ea33560546"
-            ]
-        ]
-    },
-    {
-        "id": "ce5b74ea33560546",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "Delete Embeddings",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MyCollection",
-        "distance": "cosine",
-        "operation": "delete",
-        "nResults": "5",
-        "x": 530,
-        "y": 500,
-        "wires": [
-            [
-                "67946cfb0b10bac5"
+                "cf75be103178217a"
             ]
         ]
     },
@@ -646,7 +324,7 @@ The following are example flows using Good ChromaDB.
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "result",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
@@ -669,26 +347,7 @@ The following are example flows using Good ChromaDB.
         "y": 260,
         "wires": [
             [
-                "5ca25edbc0087091"
-            ]
-        ]
-    },
-    {
-        "id": "5ca25edbc0087091",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "Insert Embeddings",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MyCollection",
-        "distance": "cosine",
-        "operation": "list",
-        "nResults": "1",
-        "x": 530,
-        "y": 260,
-        "wires": [
-            [
-                "63358d81ceaa24de"
+                "603eb6e696d796f2"
             ]
         ]
     },
@@ -724,26 +383,7 @@ The following are example flows using Good ChromaDB.
         "y": 560,
         "wires": [
             [
-                "b012cae245dd3643"
-            ]
-        ]
-    },
-    {
-        "id": "b012cae245dd3643",
-        "type": "chroma-db",
-        "z": "1e6ef671efdf6e7b",
-        "name": "Drop Collection",
-        "dbIp": "http://localhost",
-        "dbPort": "8000",
-        "dbName": "MyCollection",
-        "distance": "cosine",
-        "operation": "drop",
-        "nResults": "1",
-        "x": 520,
-        "y": 560,
-        "wires": [
-            [
-                "796b026101abc5f9"
+                "30f9b81713d706aa"
             ]
         ]
     },
@@ -763,6 +403,120 @@ The following are example flows using Good ChromaDB.
         "x": 750,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "a8efe2228a20081d",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Create Collection",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "create",
+        "nResults": "1",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "c6332d85335a6f9f"
+            ]
+        ]
+    },
+    {
+        "id": "c203de7681166255",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Insert Embeddings",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "insert",
+        "nResults": "1",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "e778da936ae795f4"
+            ]
+        ]
+    },
+    {
+        "id": "5f7cd9e19723b46e",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Query Embeddings",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "query",
+        "nResults": "10",
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "32ea1864d84fdb4e"
+            ]
+        ]
+    },
+    {
+        "id": "cf75be103178217a",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Delete Embeddings",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "delete",
+        "nResults": "1",
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "67946cfb0b10bac5"
+            ]
+        ]
+    },
+    {
+        "id": "30f9b81713d706aa",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Drop Collection",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "drop",
+        "nResults": "1",
+        "x": 520,
+        "y": 560,
+        "wires": [
+            [
+                "796b026101abc5f9"
+            ]
+        ]
+    },
+    {
+        "id": "603eb6e696d796f2",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "List Collections",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "list",
+        "nResults": "1",
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "63358d81ceaa24de"
+            ]
+        ]
     }
 ]
 ```
