@@ -60,7 +60,7 @@ ID Array
 
 ## property
 
-![image](https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/blob/main/img/properites.png)
+![image](https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/assets/51368109/6d7ea802-8caf-4625-9be4-035a041b6ee8)
 
 Name
 
@@ -134,7 +134,7 @@ Result
 
 The following are example flows using Good ChromaDB.
 
-![image](https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/blob/main/img/example.png)
+![image](https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/assets/51368109/c46247f7-c812-4b67-85c3-564c472a2db5)
 
 ### JSON
 
