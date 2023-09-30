@@ -1,0 +1,380 @@
+[
+    {
+        "id": "1e6ef671efdf6e7b",
+        "type": "tab",
+        "label": "ChromaDB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4792f9f4b8190c2f",
+        "type": "inject",
+        "z": "1e6ef671efdf6e7b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "a8efe2228a20081d"
+            ]
+        ]
+    },
+    {
+        "id": "c6332d85335a6f9f",
+        "type": "debug",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "result",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1d56935af7702c2d",
+        "type": "comment",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Good I Deer ChromaDB",
+        "info": "",
+        "x": 320,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d667ed331e78790d",
+        "type": "inject",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Embeddings",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[[1.2, 2.4, 4.5], [2.2, 4.4, 4.5]]",
+        "payloadType": "jsonata",
+        "x": 310,
+        "y": 380,
+        "wires": [
+            [
+                "c203de7681166255"
+            ]
+        ]
+    },
+    {
+        "id": "e778da936ae795f4",
+        "type": "debug",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "result",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6ae163d47c1f45cf",
+        "type": "inject",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Embeddings",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[[1.2, 2.4, 4.5], [2.2, 4.4, 4.5]]",
+        "payloadType": "jsonata",
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "5f7cd9e19723b46e"
+            ]
+        ]
+    },
+    {
+        "id": "32ea1864d84fdb4e",
+        "type": "debug",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8c25f32070d63b87",
+        "type": "inject",
+        "z": "1e6ef671efdf6e7b",
+        "name": "IDs",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[\"id-1\", \"id-2\"]",
+        "payloadType": "jsonata",
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "cf75be103178217a"
+            ]
+        ]
+    },
+    {
+        "id": "67946cfb0b10bac5",
+        "type": "debug",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4acb518fd1eb8271",
+        "type": "inject",
+        "z": "1e6ef671efdf6e7b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "603eb6e696d796f2"
+            ]
+        ]
+    },
+    {
+        "id": "63358d81ceaa24de",
+        "type": "debug",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "624f10863faede9f",
+        "type": "inject",
+        "z": "1e6ef671efdf6e7b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "30f9b81713d706aa"
+            ]
+        ]
+    },
+    {
+        "id": "796b026101abc5f9",
+        "type": "debug",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "result",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a8efe2228a20081d",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Create Collection",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "create",
+        "nResults": "1",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "c6332d85335a6f9f"
+            ]
+        ]
+    },
+    {
+        "id": "c203de7681166255",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Insert Embeddings",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "insert",
+        "nResults": "1",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "e778da936ae795f4"
+            ]
+        ]
+    },
+    {
+        "id": "5f7cd9e19723b46e",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Query Embeddings",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "query",
+        "nResults": "10",
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "32ea1864d84fdb4e"
+            ]
+        ]
+    },
+    {
+        "id": "cf75be103178217a",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Delete Embeddings",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "delete",
+        "nResults": "1",
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "67946cfb0b10bac5"
+            ]
+        ]
+    },
+    {
+        "id": "30f9b81713d706aa",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "Drop Collection",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "drop",
+        "nResults": "1",
+        "x": 520,
+        "y": 560,
+        "wires": [
+            [
+                "796b026101abc5f9"
+            ]
+        ]
+    },
+    {
+        "id": "603eb6e696d796f2",
+        "type": "good-chroma-db",
+        "z": "1e6ef671efdf6e7b",
+        "name": "List Collections",
+        "dbIp": "http://localhost",
+        "dbPort": "8000",
+        "dbName": "MyCollection",
+        "distance": "cosine",
+        "operation": "list",
+        "nResults": "1",
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "63358d81ceaa24de"
+            ]
+        ]
+    }
+]

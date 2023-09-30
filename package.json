@@ -16,6 +16,7 @@
   },
   "author": "GOOD-I-DEER",
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
       "ChromaDB": "chroma-db.js"
     }
@@ -24,6 +25,9 @@
     "chromadb": "^1.5.9"
   },
   "private": false,
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "bugs": {
     "url": "https://github.com/GOOD-I-DEER/node-red-contrib-chromadb/issues"
   },
